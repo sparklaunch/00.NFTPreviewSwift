@@ -68,9 +68,9 @@ struct ContentView: View {
                 .padding(30)
                 .scaledToFit()
             }
+            .scaledToFit()
             .clipShape(RoundedRectangle(cornerRadius: 20))
             .padding(.horizontal, 30)
-            .scaledToFit()
             .shadow(radius: 5)
         }
         .ignoresSafeArea()
@@ -79,6 +79,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (5th generation)"))
+        }
     }
 }
