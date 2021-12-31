@@ -22,7 +22,7 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 15) {
                         Text("Equilibrium #3429")
                             .foregroundColor(.white)
-                            .font(.largeTitle.bold())
+                            .font(.title.bold())
                         Text("Our Equilibrium collection promotes balance and calm.")
                             .foregroundColor(Color(red: 126 / 256, green: 150 / 256, blue: 182 / 256))
                             .fixedSize(horizontal: false, vertical: true)
@@ -47,6 +47,22 @@ struct ContentView: View {
                                     .font(.subheadline.bold())
                             }
                         }
+                    }
+                    Divider()
+                        .background(Color(red: 40 / 256, green: 56 / 256, blue: 78 / 256))
+                    HStack(alignment: .center, spacing: 20) {
+                        Image("Avatar")
+                            .overlay(Circle()
+                                        .stroke(.white))
+                        HStack(alignment: .center, spacing: 5) {
+                            Text("Creation of")
+                                .foregroundColor(Color(red: 123 / 256, green: 153 / 256, blue: 204 / 256))
+                                .font(.subheadline.weight(.medium))
+                            Text("Jules Wyvern")
+                                .foregroundColor(.white)
+                                .font(.subheadline.weight(.medium))
+                        }
+                        Spacer()
                     }
                 }
                 .padding(30)
