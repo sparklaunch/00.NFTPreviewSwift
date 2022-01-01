@@ -13,6 +13,7 @@
 		90C47A26277F0F70004DF5FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C47A14277F0F6F004DF5FD /* ContentView.swift */; };
 		90C47A27277F0F70004DF5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C47A15277F0F70004DF5FD /* Assets.xcassets */; };
 		90C47A28277F0F70004DF5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C47A15277F0F70004DF5FD /* Assets.xcassets */; };
+		90C47A33277FD915004DF5FD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C47A32277FD915004DF5FD /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		90C47A1A277F0F70004DF5FD /* NFTPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C47A20277F0F70004DF5FD /* NFTPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C47A22277F0F70004DF5FD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		90C47A32277FD915004DF5FD /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		90C47A12277F0F6F004DF5FD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				90C47A31277FD900004DF5FD /* Utilities */,
 				90C47A13277F0F6F004DF5FD /* NFTPreviewApp.swift */,
 				90C47A14277F0F6F004DF5FD /* ContentView.swift */,
 				90C47A15277F0F70004DF5FD /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				90C47A22277F0F70004DF5FD /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		90C47A31277FD900004DF5FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90C47A32277FD915004DF5FD /* Common.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C47A25277F0F70004DF5FD /* ContentView.swift in Sources */,
+				90C47A33277FD915004DF5FD /* Common.swift in Sources */,
 				90C47A23277F0F70004DF5FD /* NFTPreviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

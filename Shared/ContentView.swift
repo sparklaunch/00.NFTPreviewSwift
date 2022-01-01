@@ -10,21 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(red: 14 / 256, green: 24 / 256, blue: 39 / 256)
+            Common.Colors.kBackgroundColor
             ZStack {
-                Color(red: 21 / 256, green: 35 / 256, blue: 55 / 256)
+                Common.Colors.kForegroundColor
                 VStack(spacing: 30) {
                     Image("Equilibrium")
                         .resizable()
-                        .aspectRatio( contentMode: .fill)
+                        .aspectRatio(contentMode: .fill)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .shadow(radius: 5)
                     VStack(alignment: .leading, spacing: 15) {
-                        Text("Equilibrium #3429")
+                        Text(Common.Texts.kTitle)
                             .foregroundColor(.white)
                             .font(.title.bold())
-                        Text("Our Equilibrium collection promotes balance and calm.")
-                            .foregroundColor(Color(red: 126 / 256, green: 150 / 256, blue: 182 / 256))
+                        Text(Common.Texts.kDescription)
+                            .foregroundColor(Common.Colors.kDescriptionColor)
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.subheadline)
                             .lineSpacing(10)
@@ -33,8 +33,8 @@ struct ContentView: View {
                                 Image("EthereumIcon")
                                     .resizable()
                                     .frame(width: 11, height: 18)
-                                Text("0.041ETH")
-                                    .foregroundColor(Color(red: 61 / 256, green: 198 / 256, blue: 203 / 256))
+                                Text(Common.Texts.kEthereumText)
+                                    .foregroundColor(Common.Colors.kEthereumColor)
                                     .font(.subheadline.bold())
                             }
                             Spacer()
@@ -42,23 +42,23 @@ struct ContentView: View {
                                 Image("ClockIcon")
                                     .resizable()
                                     .frame(width: 17, height: 17)
-                                Text("3 days left")
-                                    .foregroundColor(Color(red: 121 / 256, green: 147 / 256, blue: 187 / 256))
+                                Text(Common.Texts.kSubContent)
+                                    .foregroundColor(Common.Colors.kSubContentColor)
                                     .font(.subheadline.bold())
                             }
                         }
                     }
                     Divider()
-                        .background(Color(red: 40 / 256, green: 56 / 256, blue: 78 / 256))
+                        .background(Common.Colors.kDividerColor)
                     HStack(alignment: .center, spacing: 20) {
                         Image("Avatar")
                             .overlay(Circle()
                                         .stroke(.white))
                         HStack(alignment: .center, spacing: 5) {
-                            Text("Creation of")
-                                .foregroundColor(Color(red: 123 / 256, green: 153 / 256, blue: 204 / 256))
+                            Text(Common.Texts.kAvatarTextHeader)
+                                .foregroundColor(Common.Colors.kAvatarTextColor)
                                 .font(.subheadline.weight(.medium))
-                            Text("Jules Wyvern")
+                            Text(Common.Texts.kAvatarTextFooter)
                                 .foregroundColor(.white)
                                 .font(.subheadline.weight(.medium))
                         }
